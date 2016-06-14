@@ -1,0 +1,22 @@
+{
+  "name": "dev",
+  "version": "1.0.0",
+  "description": "构建和发布",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "test_lib": "babel lib/test/src -d lib/test/build"
+  },
+  "author": "Coral.Qing",
+  "license": "ISC",
+  "devDependencies": {
+    "clean-css": "^3.4.9",
+    "uglify-js": "^2.6.1"
+  },
+  "dependencies": {
+    "tinify": "^1.2.0"
+  },
+  "browserify": {
+    "transform": [["babelify", { "presets": ["es2015"] }]]
+  }
+}
