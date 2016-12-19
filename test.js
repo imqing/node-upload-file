@@ -2,7 +2,7 @@
  * Author: Coral.Qing <imqing@vip.qq.com>
  * Date: 2016/1/6
  */
-var http = require('http');
+var http = require('http'); 
 http.request = (function (_request) {
     return function (options, callback) {
         var timeout = options['timeout'],
